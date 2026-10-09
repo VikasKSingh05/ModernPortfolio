@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { BoxIcon, InfinityIcon, LinkIcon } from "lucide-react"
+import { BoxIcon, LinkIcon } from "lucide-react"
 
 import { IconTile } from "@/components/ui/icon-tile"
 import { Tag } from "@/components/ui/tag"
@@ -27,10 +27,6 @@ export function ProjectItem({
   className?: string
   project: Project
 }) {
-  const { start, end } = project.period
-  const isOngoing = !end
-  const isSinglePeriod = end === start
-
   return (
     <Collapsible className={className} defaultOpen={project.isExpanded}>
       <div className="group/project flex items-center hover:bg-accent-muted">
@@ -55,26 +51,6 @@ export function ProjectItem({
               <h3 className="mb-1 leading-snug font-medium text-balance">
                 {project.title}
               </h3>
-
-              <dl className="text-sm text-muted-foreground">
-                <dt className="sr-only">Period</dt>
-                <dd className="flex items-center gap-0.5">
-                  <span>{start}</span>
-                  {!isSinglePeriod && (
-                    <>
-                      <span className="font-mono">—</span>
-                      {isOngoing ? (
-                        <InfinityIcon
-                          className="size-4.5 translate-y-[0.5px]"
-                          aria-label="Present"
-                        />
-                      ) : (
-                        <span>{end}</span>
-                      )}
-                    </>
-                  )}
-                </dd>
-              </dl>
             </div>
 
             <Tooltip>

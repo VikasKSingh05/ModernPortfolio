@@ -6,9 +6,6 @@ export const PROJECTS: Project[] = [
   {
     id: "smartseva",
     title: "SmartSeva",
-    period: {
-      start: "2025",
-    },
     link: "https://github.com/VikasKSingh05",
     skills: [
       "Blockchain",
@@ -28,9 +25,6 @@ export const PROJECTS: Project[] = [
   {
     id: "eduquest",
     title: "EduQuest",
-    period: {
-      start: "2024",
-    },
     link: "https://github.com/VikasKSingh05",
     skills: [
       "MERN",
@@ -45,5 +39,6 @@ export const PROJECTS: Project[] = [
 - REST API with JWT auth, progress tracking, and role-based dashboards.
 - Designed a responsive, dynamic UI to make learning feel like a game.`,
     icon: <Gamepad2Icon />,
+    isExpanded: true,
   },
 ]

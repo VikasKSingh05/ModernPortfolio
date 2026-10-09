@@ -15,7 +15,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Frontend Developer Intern",
         employmentPeriod: {
           start: "09.2025",
-          end: "10.2025",
+          end: "09.2025",
         },
         employmentType: "Internship",
         icon: <CodeXmlIcon />,
@@ -39,7 +39,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Frontend Developer",
         employmentPeriod: {
           start: "04.2025",
-          end: "06.2025",
+          end: "04.2025",
         },
         employmentType: "Part-time",
         icon: <CodeXmlIcon />,

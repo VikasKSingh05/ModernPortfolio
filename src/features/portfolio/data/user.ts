@@ -31,15 +31,9 @@ export const USER: User = {
   /** Work history entries */
   jobs: [],
   /** Rich about section; supports Markdown */
-  about: `I'm Vikas Kumar Singh, a builder at heart, endlessly curious by nature.
-
-Drawn to ideas that make me stop and think, "Could this actually work?"
-
-I learn best by going down rabbit holes, experimenting relentlessly, and turning curiosity into something tangible.
-
-I care about the little details, but I'm equally fascinated by the bigger picture — why something exists, how it works, and how it could be better.
-
-Always learning. Always building. Usually working on something I probably didn't need to start.`,
+  about: `- I'm Vikas Kumar Singh, a builder at heart, endlessly curious by nature.
+- Drawn to ideas that make me stop and think, "Could this actually work?"
+- Always learning. Always building. Usually working on something I probably didn't need to start.`,
   /** Public URL to avatar image */
   avatar: "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
   /** Different avatar variants based on theme and lighting */
