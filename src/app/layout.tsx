@@ -95,17 +95,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={fontVariables} suppressHydrationWarning>
       <head>
-        <script
-          type="text/javascript"
+        <Script
+          id="dark-mode"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: darkModeScript }}
         />
-        {/*
-          Thanks @tailwindcss. We inject the script via the `<Script/>` tag again,
-          since we found the regular `<script>` tag to not execute when rendering a not-found page.
-         */}
-        <Script src={`data:text/javascript;base64,${btoa(darkModeScript)}`} />
-        <script
-          type="text/javascript"
+        <Script
+          id="avatar-lights"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               try {

@@ -37,16 +37,16 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-| Script           | Description                              |
-| ---------------- | ---------------------------------------- |
-| `pnpm dev`       | Start the dev server (Turbopack)         |
-| `pnpm build`     | Production build                         |
-| `pnpm start`     | Run the production server                |
-| `pnpm preview`   | Build then start                         |
-| `pnpm lint`      | Run ESLint                               |
-| `pnpm check-types` | TypeScript type-check                   |
-| `pnpm format:write` | Prettier format all files              |
-| `pnpm test:run`  | Run Vitest once                          |
+| Script              | Description                      |
+| ------------------- | -------------------------------- |
+| `pnpm dev`          | Start the dev server (Turbopack) |
+| `pnpm build`        | Production build                 |
+| `pnpm start`        | Run the production server        |
+| `pnpm preview`      | Build then start                 |
+| `pnpm lint`         | Run ESLint                       |
+| `pnpm check-types`  | TypeScript type-check            |
+| `pnpm format:write` | Prettier format all files        |
+| `pnpm test:run`     | Run Vitest once                  |
 
 ## Customization
 
