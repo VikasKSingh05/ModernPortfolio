@@ -12,7 +12,6 @@ import {
   IntroItemIcon,
   IntroItemLink,
 } from "./intro-item"
-import { PhoneItem } from "./phone-item"
 
 export function Overview() {
   return (
@@ -35,8 +34,6 @@ export function Overview() {
         </IntroItem>
 
         <CurrentLocalTimeItem timeZone={USER.timeZone} />
-
-        <PhoneItem phoneNumberB64={USER.phoneNumberB64} />
 
         <EmailItem emailB64={USER.emailB64} />
 

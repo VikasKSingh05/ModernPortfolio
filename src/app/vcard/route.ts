@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { decodeEmail, decodePhoneNumber } from "@/utils/string"
+import { decodeEmail } from "@/utils/string"
 import sharp from "sharp"
 import VCard from "vcard-creator"
 
@@ -14,7 +14,6 @@ export async function GET() {
 
   card
     .addName(USER.lastName, USER.firstName)
-    .addPhoneNumber(decodePhoneNumber(USER.phoneNumberB64))
     .addAddress(USER.address)
     .addEmail(decodeEmail(USER.emailB64))
 

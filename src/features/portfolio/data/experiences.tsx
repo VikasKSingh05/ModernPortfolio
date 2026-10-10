@@ -22,7 +22,7 @@ export const EXPERIENCES: Experience[] = [
         description: `- Implemented new UI components and features in a React-based web app.
 - Worked in an agile team; reviewed code and fixed cross-browser UI bugs.
 - Gained hands-on experience shipping features to production.`,
-        skills: ["React", "JavaScript", "HTML", "CSS", "Git", "Agile"],
+        skills: ["React", "JavaScript", "HTML", "CSS", "Git"],
         isExpanded: true,
       },
     ],
@@ -46,14 +46,7 @@ export const EXPERIENCES: Experience[] = [
         description: `- Built responsive, production-ready UIs with React, Next.js, and Tailwind CSS.
 - Collaborated with designers and backend engineers to ship client features end-to-end.
 - Maintained component quality and performance across the frontend codebase.`,
-        skills: [
-          "React",
-          "Next.js",
-          "TypeScript",
-          "JavaScript",
-          "Tailwind CSS",
-          "REST API",
-        ],
+        skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API"],
         isExpanded: true,
       },
     ],

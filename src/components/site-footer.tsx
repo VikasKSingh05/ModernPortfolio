@@ -12,7 +12,7 @@ export function SiteFooter() {
     <footer className="max-w-screen overflow-x-clip px-2">
       <div className="mx-auto border-x border-line group-has-data-[slot=layout-wide]/layout:container md:max-w-3xl">
         <div className="screen-line-top screen-line-bottom">
-          <div className="stripe-divider h-12" />
+          <div className="stripe-divider" />
         </div>
 
         <div className="screen-line-top screen-line-bottom flex w-full before:z-1 after:z-1">

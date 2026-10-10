@@ -70,13 +70,3 @@ pnpm test:run
 pnpm build
 pnpm check-types
 ```
-
-### Phone-number metadata
-
-The site formats phone numbers for India (+91) using
-`src/assets/libphonenumber.metadata.json`. To regenerate it after changing the
-target country in `package.json`:
-
-```bash
-pnpm generate-libphonenumber-metadata
-```

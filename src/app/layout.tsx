@@ -1,13 +1,13 @@
 import "@/styles/globals.css"
 
 import type { Metadata, Viewport } from "next"
-import Script from "next/script"
 import type { WebSite, WithContext } from "schema-dts"
 
 import { JSON_LD_ID, personJsonLd } from "@/config/json-ld"
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site"
 import { fontVariables } from "@/lib/fonts"
 import { JsonLdScript } from "@/lib/json-ld"
+import { DarkModeBootstrapScript } from "@/components/dark-mode-bootstrap-script"
 import { Providers } from "@/components/providers"
 import { USER } from "@/features/portfolio/data/user"
 
@@ -95,11 +95,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={fontVariables} suppressHydrationWarning>
       <head>
-        <Script
-          id="dark-mode"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{ __html: darkModeScript }}
-        />
+        <DarkModeBootstrapScript html={darkModeScript} />
         <JsonLdScript data={getWebSiteJsonLd()} />
       </head>
 

@@ -351,7 +351,7 @@
 
   /* Layout */
   --header-height: --spacing(14);
-  --fade-bottom-height: --spacing(24);
+  --fade-bottom-height: --spacing(16);
 }
 
 .dark {

@@ -20,8 +20,6 @@ export const USER: User = {
   ],
   /** General location for display */
   address: "Delhi NCR, India",
-  /** E.164 format, base64 encoded (https://t.io.vn/base64-string-converter) */
-  phoneNumberB64: "KzkxODg1MTc4Njc1OA==",
   /** base64 encoded (https://t.io.vn/base64-string-converter) */
   emailB64: "dmlrYXNzaW5naC5kMmVAZ21haWwuY29t",
   /** Personal/homepage URL */

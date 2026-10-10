@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
   {
     id: "smartseva",
     title: "SmartSeva",
-    link: "https://github.com/VikasKSingh05",
+    link: "https://smart-seva-gamma.vercel.app/",
     skills: [
       "Blockchain",
       "Solidity",
@@ -25,18 +25,11 @@ export const PROJECTS: Project[] = [
   {
     id: "eduquest",
     title: "EduQuest",
-    link: "https://github.com/VikasKSingh05",
-    skills: [
-      "MERN",
-      "MongoDB",
-      "Express.js",
-      "React.js",
-      "Node.js",
-      "Tailwind CSS",
-    ],
+    link: "https://eduquest-six-gold.vercel.app/",
+    skills: ["React.js", "Tailwind CSS", "Supabase", "PostgreSQL"],
     description: `A gamified learning platform that makes studying addictive.
 - Quizzes, daily streaks, XP, and leaderboards to keep learners engaged.
-- REST API with JWT auth, progress tracking, and role-based dashboards.
+- Supabase for auth, database, progress tracking, and role-based dashboards.
 - Designed a responsive, dynamic UI to make learning feel like a game.`,
     icon: <Gamepad2Icon />,
     isExpanded: true,
