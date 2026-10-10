@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: true,
   typedRoutes: true,
-  allowedDevOrigins: ["ncdai.localhost", "ncdai.local"],
+  allowedDevOrigins: ["vikasksingh05.localhost", "vikasksingh05.local"],
   devIndicators: false,
   images: {
     remotePatterns: [

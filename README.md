@@ -6,25 +6,24 @@
 
 </div>
 
-A modern single-page résumé portfolio for **Vikas Kumar Singh**, built with
-Next.js, Tailwind CSS, shadcn/ui, and MDX — forked and customized from
+A modern single-page resume portfolio for **Vikas Kumar Singh**, built with
+Next.js, Tailwind CSS, and shadcn/ui — forked and customized from
 [ChanHDai.com](https://github.com/ncdai/chanhdai.com) by **Ncdai**.
 
 ## Features
 
-- Single-page résumé (Overview · Socials · Stack · Experience · Education ·
-  Projects · Awards · Certifications)
-- Light / dark themes
-- Flip sentences, avatar, and theme toggle
+- Single-page resume (Overview · Socials · GitHub contributions · Stack ·
+  Experience · Education · Projects · Awards · Certifications)
+- Light / dark themes with animated theme toggle
+- Flip sentences, command menu, and a name-pronunciation button
 - `/vcard` — downloadable vCard
-- PWA manifest, RSS, sitemap, robots.txt, JSON-LD
+- PWA manifest, sitemap, robots.txt, JSON-LD
 
 ## Stack
 
 - Next.js 16 (App Router · Turbopack)
 - Tailwind CSS v4
-- shadcn/ui + Motion (React)
-- MDX
+- shadcn/ui + Base UI + Motion (React)
 - TypeScript
 - Vitest
 
@@ -35,7 +34,7 @@ pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open http://localhost:3000 (or the portless URL, see `DEVELOPMENT.md`).
 
 | Script              | Description                      |
 | ------------------- | -------------------------------- |
@@ -48,22 +47,27 @@ Open [http://localhost:3000](http://localhost:3000).
 | `pnpm format:write` | Prettier format all files        |
 | `pnpm test:run`     | Run Vitest once                  |
 
+## Configuring a live URL
+
+`src/config/site.ts` reads `NEXT_PUBLIC_APP_URL` for absolute URLs and falls
+back to a placeholder. Set it (e.g. in Vercel) to your real domain.
+
 ## Customization
 
-Edit these files to make it yours:
+All personal data lives in `src/features/portfolio/data/`:
 
-- `src/config/site.ts` — site metadata, URL, theme
-- `src/config/user.ts` — your personal info (name, phone, email, socials,
-  jobs, projects)
-- `src/features/portfolio/data/*` — experiences, projects, awards, certs
+- `user.ts` — name, bio, phone/email (base64), about, avatar, keywords
+- `experiences.tsx`, `projects.tsx`, `education.ts`, `awards.tsx`,
+  `certifications.ts`, `tech-stack.tsx`, `social-links.ts` — content sections
+- `src/config/site.ts` — site metadata and theme colors
 
 ## Credits
 
 This project is a rewritten, customized fork of
 **[ChanHDai.com](https://github.com/ncdai/chanhdai.com)** by **Chanh Dai
-(ncdai)**, released under the MIT license. The original design, component
-architecture, and registry system are the work of Chanh Dai. Vikas Kumar Singh
-customized the content and branding.
+(ncdai)**, released under the MIT license. The original design and component
+architecture are the work of Chanh Dai. Vikas Kumar Singh customized the
+content, data layer, and branding.
 
 ## License
 

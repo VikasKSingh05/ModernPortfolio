@@ -2,13 +2,9 @@ name: CI
 
 on:
   # Gate for merging into main (required by branch protection); runs against the
-  # merge result before merge. Production deploy is gated by this PR check, so a
-  # redundant push-to-main run is intentionally omitted.
+  # merge result before merge.
   pull_request:
     branches: [main]
-  # Early feedback while iterating on staging.
-  push:
-    branches: [staging]
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -25,9 +21,6 @@ jobs:
       GITHUB_CONTRIBUTIONS_API_URL: https://github-contributions-api.jogruber.de
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-
-      - name: Install Bun
-        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
 
       - name: Install pnpm
         uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0

@@ -1,13 +1,11 @@
 # Development
 
-This guide provides instructions on how to set up and run the project locally.
+This guide explains how to set up and run the project locally.
 
 ## Prerequisites
 
-Ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
-- [pnpm](https://pnpm.io/)
+- [Node.js](https://nodejs.org/) (see `.nvmrc`)
+- [pnpm](https://pnpm.io/) (see `package.json` `packageManager`)
 - [Git](https://git-scm.com/)
 
 ## Setup
@@ -15,25 +13,17 @@ Ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ncdai/chanhdai.com.git minimal-dev-portfolio
-cd minimal-dev-portfolio
+git clone https://github.com/VikasKSingh05/ModernPortfolio.git
+cd ModernPortfolio
 ```
 
-### 2. Install portless
-
-Documentation: [port1355.dev](https://port1355.dev)
+### 2. Install dependencies
 
 ```bash
-npm install -g portless
+pnpm install
 ```
 
-### 3. Install dependencies
-
-```bash
-pnpm i
-```
-
-### 4. Configure Environment Variables
+### 3. Configure environment variables
 
 Create a `.env.local` file based on `.env.example`:
 
@@ -41,73 +31,52 @@ Create a `.env.local` file based on `.env.example`:
 cp .env.example .env.local
 ```
 
-Then, update the necessary environment variables inside `.env.local`.
+The only required value is `NEXT_PUBLIC_APP_URL`; it drives all generated
+absolute URLs. `GITHUB_CONTRIBUTIONS_API_URL` overrides the public GitHub
+contributions API base used to render the contribution graph.
 
-### 5. Run the development server
+### 4. Run the development server (optional: portless)
+
+`portless.json` enables a stable HTTPS origin.
 
 ```bash
+npm install -g portless
 pnpm dev
 ```
 
-The application should now be available at https://ncdai.localhost
+The app is served at https://vikasksingh05.localhost, or at
+http://localhost:3000 when portless is not installed.
 
-## Building for Production
+## Building for production
 
 ```bash
 pnpm build
 ```
 
-After building, start the application with:
+Start the production server:
 
 ```bash
-NODE_ENV=production pnpm start
+pnpm start
 ```
 
 ## Before pushing
 
-CI runs these on every push and PR. Run them locally first:
+CI runs these on every pull request. Run them locally first:
 
 ```bash
 pnpm lint
 pnpm format:check
+pnpm test:run
 pnpm build
 pnpm check-types
-pnpm registry:validate
 ```
 
-## Registry
+### Phone-number metadata
 
-This project utilizes **shadcn Registry**, which allows you to manage and distribute custom components, hooks, pages, and other files across multiple React projects. By hosting a registry, you can reuse UI components easily without manually copying code between projects.
-
-### Using registry in other React projects
-
-If you're working on a different React project and want to reuse the custom components from this repository, visit [chanhdai.com/components](https://chanhdai.com/components) for installation instructions and component documentation.
-
-> Note: These components are compatible with [Tailwind CSS v4](https://tailwindcss.com/blog/tailwindcss-v4) and [React 19](https://react.dev/blog/2024/12/05/react-19).
-
-### Registry configuration
-
-Documentation: [shadcn registry docs](https://ui.shadcn.com/docs/registry)
-
-Source files:
-
-- `./src/registry`
-
-Before using the registry, run the following command to build and generate the registry JSON files:
+The site formats phone numbers for India (+91) using
+`src/assets/libphonenumber.metadata.json`. To regenerate it after changing the
+target country in `package.json`:
 
 ```bash
-pnpm registry:build
+pnpm generate-libphonenumber-metadata
 ```
-
-When running the `npx shadcn add <registry-url>` command, the selected component will be automatically downloaded and integrated into your project.
-
-## Screenshots
-
-The site screenshots are captured locally, then published to Cloudflare R2.
-
-```bash
-pnpm capture       # Capture screenshots into .ncdai/screenshots
-pnpm capture:sync  # Upload the folder to Cloudflare R2
-```
-
-`pnpm capture:sync` requires the `R2_*` variables from `.env.example`. It mirrors the local folder structure into the bucket (skipping dotfiles), overwriting existing files but never deleting remote ones.

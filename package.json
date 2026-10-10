@@ -2,7 +2,7 @@
   "name": "chanhdai.com",
   "version": "0.1.0",
   "description": "Personal portfolio and resume of Vikas Kumar Singh.",
-  "homepage": "https://your-domain.com",
+  "homepage": "https://github.com/VikasKSingh05/ModernPortfolio",
   "license": "MIT",
   "author": {
     "name": "Vikas Kumar Singh",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VikasKSingh05/portfolio.git"
+    "url": "git+https://github.com/VikasKSingh05/ModernPortfolio.git"
   },
   "scripts": {
     "dev": "next dev",
@@ -25,7 +25,7 @@
     "check-types": "tsc --noEmit --pretty",
     "format:check": "prettier --check \"**/*.{ts,tsx,md,mdx}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,md,mdx}\" --cache",
-    "generate-libphonenumber-metadata": "libphonenumber-metadata-generator ./src/assets/libphonenumber.metadata.json --countries VN --extended",
+    "generate-libphonenumber-metadata": "libphonenumber-metadata-generator ./src/assets/libphonenumber.metadata.json --countries IN --extended",
     "upgrade:next": "npx @next/codemod@latest upgrade latest",
     "upgrade:tailwind": "npx @tailwindcss/upgrade@latest",
     "prepare": "husky"
@@ -39,7 +39,6 @@
     "cmdk": "^1.1.1",
     "date-fns": "^4.1.0",
     "geist": "^1.7.0",
-    "jotai": "^2.18.1",
     "libphonenumber-js": "^1.12.4",
     "lucide-react": "^1.14.0",
     "motion": "^12.39.0",

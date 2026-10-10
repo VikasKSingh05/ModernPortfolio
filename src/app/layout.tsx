@@ -100,18 +100,6 @@ export default function RootLayout({
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: darkModeScript }}
         />
-        <Script
-          id="avatar-lights"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                var value = localStorage.getItem('avatarLights');
-                document.documentElement.dataset.avatarLights = JSON.parse(value || '"on"');
-              } catch(_) {}
-            `,
-          }}
-        />
         <JsonLdScript data={getWebSiteJsonLd()} />
       </head>
 

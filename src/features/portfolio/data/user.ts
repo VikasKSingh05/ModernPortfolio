@@ -36,13 +36,6 @@ export const USER: User = {
 - Always learning. Always building. Usually working on something I probably didn't need to start.`,
   /** Public URL to avatar image */
   avatar: "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
-  /** Different avatar variants based on theme and lighting */
-  avatarVariants: {
-    lightOff: "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
-    lightOn: "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
-    darkOff: "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
-    darkOn: "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
-  },
   /** Open Graph image URL for social sharing */
   ogImage: "https://your-domain.com/og.png",
   /** Audio URL for name pronunciation */

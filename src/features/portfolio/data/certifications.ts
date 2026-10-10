@@ -6,7 +6,6 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Amazon Web Services",
     issuerIconName: "aws",
     issueDate: "2025-06-15",
-    credentialID: "",
     credentialURL: "https://www.credly.com",
   },
   {
@@ -14,7 +13,6 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Amazon Web Services",
     issuerIconName: "aws",
     issueDate: "2025-03-20",
-    credentialID: "",
     credentialURL: "https://www.credly.com",
   },
 ]
