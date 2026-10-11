@@ -12,7 +12,6 @@ TypeScript, React 19, Tailwind CSS v4, shadcn/ui + Base UI, Vitest, pnpm.
 | `src/features/portfolio/`              | Portfolio sections: `components`, `data`, `types` |
 | `src/config/`                          | Site metadata and JSON-LD config                  |
 | `src/hooks/`, `src/lib/`, `src/utils/` | Hooks, libraries, utilities                       |
-| `src/assets/`                          | Static fonts and phone metadata                   |
 | `src/styles/`                          | Global / typeset CSS                              |
 
 **Key files**: `src/features/portfolio/data/` (all personal content), `src/features/portfolio/types/` (data types), `src/config/site.ts`, `next.config.ts`, `.env.example`

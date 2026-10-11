@@ -56,7 +56,7 @@ back to a placeholder. Set it (e.g. in Vercel) to your real domain.
 
 All personal data lives in `src/features/portfolio/data/`:
 
-- `user.ts` — name, bio, phone/email (base64), about, avatar, keywords
+- `user.ts` — name, bio, email (base64), about, avatar, keywords
 - `experiences.tsx`, `projects.tsx`, `education.ts`, `awards.tsx`,
   `certifications.ts`, `tech-stack.tsx`, `social-links.ts` — content sections
 - `src/config/site.ts` — site metadata and theme colors
