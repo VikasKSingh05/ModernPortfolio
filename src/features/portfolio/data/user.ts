@@ -34,10 +34,6 @@ export const USER: User = {
 - Always learning. Always building. Usually working on something I probably didn't need to start.`,
   /** Public URL to avatar image */
   avatar: "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
-  /** Open Graph image URL for social sharing */
-  ogImage: "https://your-domain.com/og.png",
-  /** Audio URL for name pronunciation */
-  namePronunciationUrl: "",
   /** SEO keywords list for metadata */
   keywords: [
     "Vikas Kumar Singh",

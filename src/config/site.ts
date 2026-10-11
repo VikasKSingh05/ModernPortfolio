@@ -3,8 +3,7 @@ import { USER } from "@/features/portfolio/data/user"
 
 export const SITE_INFO = {
   name: "Vikas Portfolio",
-  url: process.env.NEXT_PUBLIC_APP_URL || "https://your-domain.com",
-  ogImage: USER.ogImage,
+  url: process.env.NEXT_PUBLIC_APP_URL || "https://www.vikas-singh.me",
   description: USER.bio,
   keywords: USER.keywords,
 }

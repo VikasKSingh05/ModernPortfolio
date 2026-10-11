@@ -15,7 +15,7 @@ Next.js, Tailwind CSS, and shadcn/ui — forked and customized from
 - Single-page resume (Overview · Socials · GitHub contributions · Stack ·
   Experience · Education · Projects · Awards · Certifications)
 - Light / dark themes with animated theme toggle
-- Flip sentences, command menu, and a name-pronunciation button
+- Flip sentences, command menu, and a downloadable resume
 - `/vcard` — downloadable vCard
 - PWA manifest, sitemap, robots.txt, JSON-LD
 
