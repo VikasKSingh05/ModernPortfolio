@@ -11,7 +11,7 @@ export const EDUCATION: Education[] = [
       end: "06.2028",
     },
     description: `- CGPA: 9.38/10
-- Core coursework: AI & ML, Web Development`,
+- Core coursework: Operating Systems, Computer Networks, DBMS, OOPS`,
     isExpanded: true,
   },
 ]

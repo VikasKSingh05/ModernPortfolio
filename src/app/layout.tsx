@@ -99,7 +99,7 @@ export default function RootLayout({
         <JsonLdScript data={getWebSiteJsonLd()} />
       </head>
 
-      <body>
+      <body suppressHydrationWarning>
         <Providers>{children}</Providers>
       </body>
     </html>

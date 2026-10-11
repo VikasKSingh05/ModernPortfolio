@@ -19,7 +19,6 @@ import {
 import { useTheme } from "next-themes"
 import { useHotkeys } from "react-hotkeys-hook"
 
-import { SOURCE_CODE_GITHUB_URL } from "@/config/site"
 import { useMutationObserver } from "@/hooks/use-mutation-observer"
 import {
   CommandDialog,
@@ -33,7 +32,7 @@ import {
 import { SOCIAL_ICONS } from "@/features/portfolio/components/social-link-icons"
 import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
 
-import { GitHubIcon, SearchIcon } from "./icons"
+import { SearchIcon } from "./icons"
 import { Button } from "./ui/button"
 import { Kbd, KbdGroup } from "./ui/kbd"
 
@@ -117,13 +116,6 @@ const OTHER_LINK_ITEMS: CommandLinkItem[] = [
     href: "/vcard",
     kind: "command",
     icon: <DownloadIcon />,
-  },
-  {
-    title: "Source code",
-    href: SOURCE_CODE_GITHUB_URL,
-    kind: "link",
-    icon: <GitHubIcon />,
-    openInNewTab: true,
   },
 ]
 

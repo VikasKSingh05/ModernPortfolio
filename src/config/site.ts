@@ -15,5 +15,3 @@ export const META_THEME_COLORS = {
 }
 
 export const GITHUB_USERNAME = SOCIAL.github.handle
-export const SOURCE_CODE_GITHUB_URL =
-  "https://github.com/VikasKSingh05/ModernPortfolio"

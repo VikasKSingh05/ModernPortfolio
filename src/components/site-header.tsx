@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic"
 
 import { Separator } from "@/components/base/ui/separator"
-import { NavItemGitHub } from "@/components/nav-item-github"
+import { NavItemResume } from "@/components/nav-item-resume"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 const CommandMenu = dynamic(() => import("@/components/command-menu"))
@@ -22,7 +22,7 @@ export function SiteHeader() {
             orientation="vertical"
             className="mx-2 max-sm:hidden data-vertical:h-5 data-vertical:self-center"
           />
-          <NavItemGitHub />
+          <NavItemResume />
           <Separator
             orientation="vertical"
             className="mx-2 data-vertical:h-5 data-vertical:self-center"
