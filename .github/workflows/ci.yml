@@ -5,6 +5,9 @@ on:
   # merge result before merge.
   pull_request:
     branches: [main]
+  # Verify direct pushes to main too, since the repo is committed to directly.
+  push:
+    branches: [main]
 
 concurrency:
   group: ci-${{ github.ref }}
