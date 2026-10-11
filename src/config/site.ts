@@ -2,7 +2,7 @@ import { SOCIAL } from "@/features/portfolio/data/social-links"
 import { USER } from "@/features/portfolio/data/user"
 
 export const SITE_INFO = {
-  name: USER.displayName,
+  name: "Vikas Portfolio",
   url: process.env.NEXT_PUBLIC_APP_URL || "https://your-domain.com",
   ogImage: USER.ogImage,
   description: USER.bio,

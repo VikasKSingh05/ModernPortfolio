@@ -4,9 +4,15 @@
   "description": "B.Tech CSE (AI & ML) Student | Full Stack Developer",
   "icons": [
     {
-      "src": "https://api.dicebear.com/9.x/initials/svg?seed=Vikas%20KS",
+      "src": "/icon.svg",
       "type": "image/svg+xml",
       "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-icon.png",
+      "type": "image/png",
+      "sizes": "180x180",
       "purpose": "any"
     }
   ],

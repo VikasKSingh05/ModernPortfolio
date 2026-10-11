@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_INFO.url),
   title: {
     template: `%s – ${SITE_INFO.name}`,
-    default: `${USER.displayName} – ${USER.jobTitle}`,
+    default: SITE_INFO.name,
   },
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,
@@ -73,10 +73,6 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: [SITE_INFO.ogImage],
-  },
-  icons: {
-    icon: USER.avatar,
-    apple: USER.avatar,
   },
 }
 
