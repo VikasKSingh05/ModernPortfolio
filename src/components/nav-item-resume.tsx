@@ -13,6 +13,7 @@ export function NavItemResume() {
       <Button
         className="h-8 gap-1.5 px-2 text-muted-foreground"
         variant="ghost"
+        nativeButton={false}
         render={<a href="/resume" aria-label="View resume" />}
       >
         <FileTextIcon aria-hidden />
@@ -26,6 +27,7 @@ export function NavItemResume() {
               className="text-muted-foreground"
               variant="ghost"
               size="icon-sm"
+              nativeButton={false}
               aria-label="Download resume (.docx)"
               render={<a href="/resume/resume.docx" download />}
             >
