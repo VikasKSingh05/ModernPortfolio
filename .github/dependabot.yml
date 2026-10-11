@@ -13,3 +13,15 @@ updates:
         patterns: ["*"]
     commit-message:
       prefix: "ci"
+  # Keep the npm dependencies patched. Grouped into one PR per month to reduce
+  # noise; security updates still arrive out-of-band.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      dependencies:
+        patterns: ["*"]
+    commit-message:
+      prefix: "deps"
+    versioning-strategy: increase

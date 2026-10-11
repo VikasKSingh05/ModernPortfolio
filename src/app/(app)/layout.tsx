@@ -13,8 +13,16 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     // - https://base-ui.com/react/overview/quick-start#portals
     // - https://base-ui.com/react/overview/quick-start#ios-26-safari
     <div className="group/layout relative isolate">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:border focus:bg-background focus:px-3 focus:py-2 focus:text-sm focus:font-medium focus:text-foreground focus:shadow-sm"
+      >
+        Skip to content
+      </a>
       <SiteHeader />
-      <main className="max-w-screen overflow-x-clip px-2">{children}</main>
+      <main id="main-content" className="max-w-screen overflow-x-clip px-2">
+        {children}
+      </main>
       <SiteFooter />
       <div
         className="pointer-events-none fixed inset-x-0 bottom-0 z-50"
